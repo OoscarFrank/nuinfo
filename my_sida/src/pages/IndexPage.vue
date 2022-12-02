@@ -183,6 +183,18 @@
       </q-carousel>
     </div>
   </div>
+  <div class="q-ma-lg text-h6">
+    Image de la plus belle ville (MULHOUSE !) -> UBISOFT : <br />
+    <a
+      href="https://www.ousortiren.com/images/Alsace-67-68/Ville-Alsace/Ou-Sortir-En-Alsace-Mulhouse.jpg"
+      >Première image</a
+    >
+    <br />
+    <a
+      href="https://www.mplusinfo.fr/wp-content/uploads/2018/11/MarchedeNoelUneOK.jpg"
+      >Deuxième image</a
+    >
+  </div>
 </template>
 
 <script>
