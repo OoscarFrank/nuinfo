@@ -74,10 +74,19 @@
       <q-separator />
 
       <q-card-actions vertical>
-        <q-btn flat>OUI</q-btn>
-        <q-btn flat @click="changeQuestion()">NON</q-btn>
+        <q-btn flat @click="ouiQuestion()">OUI</q-btn>
+        <q-btn flat @click="nonQuestion()">NON</q-btn>
       </q-card-actions>
     </q-card>
+    <div style="text-align: center">
+      <img src="src/assets/pasbien.jpg" v-if="question == 4" />
+    </div>
+    <div style="text-align: center">
+      <img
+        src="src/assets/1320x990px-Feautured-image-58-1024x768.jpg"
+        v-if="question == 5"
+      />
+    </div>
   </div>
   <q-separator class="q-ma-lg" style="color: black" />
   <div class="q-pa-md">
@@ -191,6 +200,12 @@ export default defineComponent({
     return {
       changeQuestion: () => {
         question.value += 1;
+      },
+      ouiQuestion: () => {
+        question.value = 4;
+      },
+      nonQuestion: () => {
+        question.value = 5;
       },
       slide: ref('style'),
       lorem:
